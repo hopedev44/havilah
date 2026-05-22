@@ -97,10 +97,15 @@ router.get(
 router.post("/add-session-to-marks", addSessionToMarks);
 
 // router.get("/get-all-scores/:examId/:subjectId", getScores);
+// router.get(
+//   "/get-all-scores/:examId/:subjectId/:sessionId",
+//   getScores
+// );
 router.get(
-  "/get-all-scores/:examId/:subjectId/:sessionId",
+  "/get-all-scores/:examId/:subjectId",
   getScores
 );
+
 router.get("/get-all-scored/:examId/:sessionId/:classname", getAllScoresForExamSession);
 
 router.put("/update-all-marks", updateMarks);
